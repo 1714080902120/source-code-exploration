@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    
+      <!-- afasfasdasdas -->
+    <div class="tom" v-on:click="changeColor()">
+      <div class="jerry" :id="index"></div>
+      <!-- afasfasdasdas -->
+    </div>
+    <div class="black" v-if="test">
+      <div class="whilte"></div>
+    </div>
+    <ul class="name-warpper">
+      <li class="ul-li" v-for="(item, index) in items" :id="index" @click="goAlert()" :key="index">
+        {{ item }}
+      </li>
+    </ul>
+    <div class="input-warpper" v-bind:a="test">
+      <div class="text">{{ inputValue }}</div>
+      <input type="text" v-model="inputValue">
+    </div>
+    <div class="warpper" v-for="index in items" :key="item">{{ item }}</div>
+  </div>
+  <script src="./xuni/bundle.js"></script>
+</body>
+</html>

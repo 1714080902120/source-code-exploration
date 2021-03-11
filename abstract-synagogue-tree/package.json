@@ -1,0 +1,14 @@
+{
+  "name": "abstract-synagogue-tree",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "webpack-dev-server"
+  },
+  "dependencies": {
+    "webpack": "5",
+    "webpack-cli": "3",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
